@@ -4,6 +4,8 @@ PyTorch implementation of NIPS 2017 paper [Dynamic Routing Between Capsules](htt
 
 The hyperparameters and data augmentation strategy strictly follow the paper.
 
+This is a forked version. I made some annotation and make it compatible with pytorch 1.1.0
+
 ## Requirements
 
 Only [PyTorch](http://pytorch.org/) with torchvision is required (tested on pytorch 0.2.0 and 0.3.0). Jupyter and matplotlib is required to run the notebook with visualizations.
@@ -51,3 +53,7 @@ Below, each row shows the reconstruction when one of the 16 dimensions in the Di
 We can see what individual dimensions represent for digit 7,  e.g. dim6 - stroke thickness, dim11 - digit width, dim 15 - vertical shift.
 
 Visualization examples are provided in a [jupyter notebook](reconstruction_visualization.ipynb)
+
+## My Results
+83.35% on CIFAR10
+99.51% on MNIST，with reconstruction 99.58%
